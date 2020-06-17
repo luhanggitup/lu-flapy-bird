@@ -1,0 +1,121 @@
+#game{
+    position:relative;
+    width: 100%;
+    height: 600px;
+    background-image: url(../images/sky.png);
+}
+/* ********飞行的小鸟 */
+.bird{
+    position:absolute;
+    top: 235px;
+    left: 50%;
+    margin-left: -15px;
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/birds.png);
+}
+/* ******开始游戏字体 */
+.start{
+    position: absolute;
+    top: 295px;
+    left: 50%;
+    margin-left: -100px;
+    width: 200px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-weight: bolder;
+}
+.start.start-white{
+    color: #fff;
+    font-size: 24px;
+}
+.start.start-blue{
+    color: blue;
+    font-size: 36px;
+}
+/* *****游戏开始时分数显示 */
+.score{
+    color: white;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    font-weight: bolder;
+}
+/* *******遮幕层 */
+.mask{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    opacity: 0.5;
+}
+/* ******游戏开始结束后的画面 */
+.end{
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+.end .over{
+    font-size: 35px;
+    font-weight: bolder;
+    color: red;
+}
+.end .result,
+.end .final-score
+{
+    margin-top: 20px;
+    font-size:20px;
+    color: #ff0;
+    font-weight: bold;
+}
+/* ****y游戏结束分数列表 */
+.end .rank-list{
+    margin-top: 20px; 
+    color: #0099ff;
+    text-align: left;
+}
+/* ******排名列表 */
+.end .rank-item{
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    padding: 0 10px;
+    font-size: 13px;
+}
+.end .rank-degree{
+    display:inline-block;
+    width: 14px;
+    height: 14px;
+    line-height: 14px;
+    margin-right: 10px;
+    color: #fff;
+    text-align: center;
+    background-color: #8eb9f5;
+    font-size: 12px;
+}
+.end .rank-degree.first{
+    background-color:#f54545;
+}
+.end .rank-degree.second{
+    background-color: #ff8547;
+}
+.end .rank-degree.third{
+    background-color:#ffac38;
+}
+.end .rank-score{
+    display: inline-block;
+    width: 30px;
+}
+/* ******重新开始文字 */
+.end .restart{
+    color: #0099ff;
+    font-size: 18px;
+    font-weight: bolder;
+    cursor: pointer;
+}
