@@ -13,6 +13,7 @@
     width: 30px;
     height: 30px;
     background-image: url(../images/birds.png);
+    transition: top .3s linear;
 }
 /* ******开始游戏字体 */
 .start{
@@ -25,6 +26,8 @@
     line-height: 60px;
     text-align: center;
     font-weight: bolder;
+    transition: all .3s linear;
+    cursor: pointer;
 }
 .start.start-white{
     color: #fff;
@@ -42,6 +45,7 @@
     transform: translateX(-50%);
     font-size: 24px;
     font-weight: bolder;
+    display: none;
 }
 /* *******遮幕层 */
 .mask{
@@ -52,6 +56,7 @@
     right: 0;
     background-color: black;
     opacity: 0.5;
+    display: none;
 }
 /* ******游戏开始结束后的画面 */
 .end{
@@ -60,6 +65,7 @@
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
+    display: none;
 }
 .end .over{
     font-size: 35px;
