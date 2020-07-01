@@ -57,6 +57,7 @@
     background-color: black;
     opacity: 0.5;
     display: none;
+    z-index: 2;
 }
 /* ******游戏开始结束后的画面 */
 .end{
@@ -66,6 +67,7 @@
     transform: translateX(-50%);
     text-align: center;
     display: none;
+    z-index: 3;
 }
 .end .over{
     font-size: 35px;
@@ -124,4 +126,22 @@
     font-size: 18px;
     font-weight: bolder;
     cursor: pointer;
+}
+/* 柱子 */
+.pipe{
+    position: absolute;
+    /* left: 300px; */
+    width: 52px;
+    height: 150px;
+    z-index: 1;
+}
+.pipe.pipe-up{
+    top: 0;
+   background-image: url(../images/pipe2.png);
+   background-position-y: bottom;
+}
+.pipe.pipe-bottom{
+    bottom: 0;
+    background-image: url(../images/pipe1.png);
+    background-position-y: top;
 }
